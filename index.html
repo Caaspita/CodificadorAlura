@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.aluracursos.com/" target="_blank"><img src="./img/icon.svg" alt="imagen"></a>
+        <h1>De/Codificador</h1>
+    </header>
+    <main class="contenedor">
+        <section class="ingreso">
+            <textarea class="ingreso-texto" placeholder="Ingrese texto aqui" style="overflow: hidden"></textarea>
+            <p class="ingreso-condicion"><img src="./img/info.svg"> Solo use letras minúsculas y sin acento!</p>
+            <div class="ingreso-btns">
+                <input type="button" class="btns btn-encriptar" onclick="encriptar()" value="Encriptar">
+                <input type="button" class="btns btn-desencriptar" onclick="desencriptar()" value="Desencriptar">
+            </div>
+        </section>
+        <section class="egreso">
+            <textarea class="egreso-texto"></textarea>
+            <div class="imagen">
+                <img onclick="nometoques()" class="imagen-gato" src="./img/Gato.png" alt="imagen">
+                <div>
+                    <p class="imagen-msg">No hay mensajes aún</p>
+                    <div class="egreso-btn">
+                        <button onclick="copiar()" class="btn-copy btn-h"><img src="./img/copy.svg"></button>
+                        <button onclick="limpiarTexto()" class="btn-borrar btn-h"><img src="./img/borrar.svg"></button>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="creditos">
+                    <p>Diseñado por Soiele</p>
+                    <a href="https://www.linkedin.com/in/soledad-plaza-8459811ba/" target="_blank"><img src="./img/linkedin.svg"></a> 
+                    <a href="https://es.fiverr.com/soiele?up_rollout=true" target="_blank"><img src="./img/fiver.svg"></a>
+                </div>
+                <div class="creditos">
+                    <p>Desarrollado por Caspita</p>
+                    <a href="https://www.linkedin.com/in/lucascaspani/" target="_blank"><img src="./img/linkedin.svg"></a>
+                    <a href="https://github.com/Caaspita" target="_blank"><img src="./img/github.svg"></a>
+                </div>
+
+            </footer>
+        </section>
+    </main> 
+    <script src="app.js"></script>  
+</body>
+</html>
